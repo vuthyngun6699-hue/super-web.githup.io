@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <nav class="flex items-center justify-between px-4 md:px-8 py-4 bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <button class="md:hidden p-2 text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="font-bold text-xl text-blue-600">Hyper Phone</div>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-600 transition">Support</a></li>
+            <li><a href="#" class="hover:text-blue-600 transition">Service</a></li>
+        </ul>
+
+        <div class="flex items-center space-x-2 md:space-x-4">
+            <button
+                class="bg-blue-600 text-white px-4 md:px-5 py-2 rounded-lg text-sm md:text-base font-semibold hover:bg-blue-700 transition cursor-pointer">
+                Login
+            </button>
+        </div>
+    </nav>
+
+    <div class="flex flex-col md:flex-row">
+        <aside
+            class="w-full md:w-64 bg-white shadow-md md:h-[calc(100vh-76px)] sticky top-[68px] md:top-[76px] z-40 overflow-x-auto md:overflow-y-auto">
+            <div class="p-4 md:p-6">
+                <h2 class="hidden md:block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Phone
+                    Brands</h2>
+
+                <ul id="brand-list"
+                    class="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-2 whitespace-nowrap">
+                    <li><a href="rog.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">ROG
+                            Phone</a></li>
+                    <li><a href="xiaomi.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Xiaomi</a>
+                    </li>
+                    <li><a href="redmi.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Redmi</a>
+                    </li>
+                    <li><a href="redmiagic.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Redmagic</a>
+                    </li>
+                    <li><a href="#"n
+                            class="av-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Lenovo</a>
+                    </li>
+                    <li><a href="#"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Vivo</a>
+                    </li>
+                    <li><a href="#"
+                            class="nc av-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Poco</a>
+                    </li>
+                    <li><a href="#"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">iqoo</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">Our Collection</h1>
+                    <p class="mt-4 text-lg text-gray-500">Premium quality gear for your daily adventures.</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+
+                    <div
+                        class="group relative bg-white border border-gray-200 rounded-lg flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600"
+                                alt="Minimalist White Watch" class="w-full h-full object-center object-cover">
+                        </div>
+                        <div class="flex-1 p-4 space-y-2 flex flex-col">
+                            <h3 class="text-sm font-medium text-gray-900">
+                                <a href="#">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    Classic White Watch
+                                </a>
+                            </h3>
+                            <p class="text-sm text-gray-500 italic">Signature Edition</p>
+                            <div class="flex-1 flex flex-col justify-end">
+                                <p class="text-lg font-bold text-gray-900">$120.00</p>
+                                <button
+                                    class="mt-4 w-full bg-indigo-600 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 z-10 relative">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative bg-white border border-gray-200 rounded-lg flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600"
+                                alt="Wireless Headphones" class="w-full h-full object-center object-cover">
+                        </div>
+                        <div class="flex-1 p-4 space-y-2 flex flex-col">
+                            <h3 class="text-sm font-medium text-gray-900">
+                                <a href="#">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    Studio Headphones
+                                </a>
+                            </h3>
+                            <p class="text-sm text-gray-500 italic">Noise Cancelling</p>
+                            <div class="flex-1 flex flex-col justify-end">
+                                <p class="text-lg font-bold text-gray-900">$299.00</p>
+                                <button
+                                    class="mt-4 w-full bg-indigo-600 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 z-10 relative">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

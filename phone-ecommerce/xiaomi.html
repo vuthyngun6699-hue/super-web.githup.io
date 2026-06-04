@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <nav class="flex items-center justify-between px-4 md:px-8 py-4 bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <button class="md:hidden p-2 text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="font-bold text-xl text-blue-600">Hyper Phone</div>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-600 transition">Support</a></li>
+            <li><a href="#" class="hover:text-blue-600 transition">Service</a></li>
+        </ul>
+
+        <div class="flex items-center space-x-2 md:space-x-4">
+            <button
+                class="bg-blue-600 text-white px-4 md:px-5 py-2 rounded-lg text-sm md:text-base font-semibold hover:bg-blue-700 transition cursor-pointer">
+                Login
+            </button>
+        </div>
+    </nav>
+
+    <div class="flex flex-col md:flex-row">
+        <aside
+            class="w-full md:w-64 bg-white shadow-md md:h-[calc(100vh-76px)] sticky top-[68px] md:top-[76px] z-40 overflow-x-auto md:overflow-y-auto">
+            <div class="p-4 md:p-6">
+                <h2 class="hidden md:block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Phone
+                    Brands</h2>
+                <ul id="brand-list"
+                    class="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-2 whitespace-nowrap">
+                    <li><a href="rog.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">ROG
+                            Phone</a></li>
+                    <li><a href="xiaomi.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Xiaomi</a>
+                    </li>
+                    <li><a href="redmi.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Redmi</a>
+                    </li>
+                    <li><a href="redmiagic.html"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Redmagic</a>
+                    </li>
+                    <li><a href="#"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Lenovo</a>
+                    </li>
+                    <li><a href="#"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Vivo</a>
+                    </li>
+                    <li><a href="#"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">Poco</a>
+                    </li>
+                    <li><a href="#"
+                            class="nav-link block px-3 md:px-4 py-2 text-sm md:text-base text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition font-medium">iqoo</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Product Grid Area -->
+        <main class="flex-1 min-h-screen bg-gray-50 py-10 px-4 md:px-8">
+            <div class="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden mb-12 shadow-lg">
+                <!-- Background Image -->
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop"
+                    alt="Gaming Banner" class="absolute inset-0 w-full h-full object-cover" />
+
+                <!-- Dark Overlay for text readability -->
+                <div class="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent"></div>
+
+                <!-- Banner Content -->
+                <div class="relative h-full flex flex-col justify-center px-8 md:px-16 text-white">
+                    <span
+                        class="bg-blue-600 w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+                        New Arrival
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-black italic tracking-tighter mb-4">
+                        xiaomi <br /> <span class="text-blue-500">ELITE PERFORMANCE</span>
+                    </h1>
+                    <p class="max-w-md text-gray-300 text-sm md:text-lg mb-8">
+                        Experience the next level of mobile gaming with the Snapdragon 8 Elite. Unmatched speed,
+                        cooling, and display.
+                    </p>
+                    <div class="flex gap-4">
+                        <button
+                            class="bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition cursor-pointer">
+                            Buy Now
+                        </button>
+                        <button
+                            class="border-2 border-white/30 backdrop-blur-md text-white px-6 py-3 rounded-lg font-bold hover:bg-white/10 transition cursor-pointer">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Header -->
+            <div class="w-full mb-10">
+                <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Latest gamming phone</h2>
+                <p class="text-gray-600 mt-2">Explore high-performance gaming gear and flagship smartphones.</p>
+                <div class="h-1 w-20 bg-blue-600 mt-4"></div>
+            </div>
+
+            <!-- Cards Grid Container: Set to w-full and responsive columns -->
+            <div
+                class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-stretch">
+
+                <!-- Card 1 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/xiaomi 17 pro 5g.jpg" alt="ROG 7"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi 17 pro 5g</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2"> gaming phone with Snapdragon 8 elite gen 5.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$899</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/xiaomi 17 pro max.jpg" alt="Phone"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi 17 pro max</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2">Featuring the AeroActive Portal cooling
+                                system.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$899</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/poco f3 gt.jpg" alt="Phone"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi poco f3 gt</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2">dimensity 1200 for elite
+                                performance.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$149</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/poco f4 gt.jpg" alt="Phone"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi poco f4 gt</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2">snapdragon 8 gen 1 with IP68 water
+                                resistance.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$199</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/poco f5 pro.jpg" alt="Monitor"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi poco f5 pro</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2">snapdragon 8 gen 3 for competitive
+                                gaming.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$249</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/redmi k60 ultimate.jpg" alt="Keyboard"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi redmi k60 ultimate</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2"> snapdragon 8 gen 3.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$399</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div
+                    class="w-full h-[400px] bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-[240px] w-full overflow-hidden">
+                        <img src="./assets/picture/phone type/redmi k60 ultra.jpg" alt="Keyboard"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 truncate">xiaomi redmi k60 ultra</h3>
+                            <p class="text-sm text-gray-500 mt-1 line-clamp-2">snapdragon 8 gen 3.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-extrabold text-gray-900">$459</span>
+                            <button
+                                class="bg-blue-600 text-white text-xs uppercase font-semibold tracking-tight px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+             
+            </div>
+        </main>
+</body>
+
+</html>
